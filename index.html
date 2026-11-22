@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Hungría</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Hungría</h1>
+        <nav> 
+            <a href="#">Inicio</a>
+            <a href="#">Contacto</a>
+            <a href="#">Soporte</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="card-img">
+                <img src="hotel1.avif" alt="Vista del Hotel 1">
+            </div>
+            <div class="card-info">
+                <h2>Hotel 1</h2>
+                <button class="btn-reservar">Reservar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="hotel3.webp" alt="Vista del Hotel 2">
+            </div>
+            <div class="card-info">
+                <h2>Hotel 2</h2>
+                <button class="btn-reservar">Reservar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img">
+                <img src="hotel3.jpg" alt="Vista del Hotel 3">
+            </div>
+            <div class="card-info">
+                <h2>Hotel 3</h2>
+                <button class="btn-reservar">Reservar</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Reserva -->
+    <div id="modal-reserva" class="modal oculto">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            
+            <div id="formulario-reserva">
+                <h2>Selecciona fecha y hora</h2>
+                <input type="datetime-local" id="fecha-hora" required>
+                <button id="btn-confirmar">Confirmar</button>
+            </div>
+
+            <div id="mensaje-exito" class="oculto">
+                <div class="icono-exito">✓</div>
+                <h2>Reserva Exitosa</h2>
+                <p>Te esperamos pronto.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
